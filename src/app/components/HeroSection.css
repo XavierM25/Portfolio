@@ -1,0 +1,17 @@
+.rainbow-text {
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 132, 0), rgb(246, 255, 0), rgb(64, 255, 0), rgb(0, 208, 255), rgb(47, 0, 255), rgb(204, 0, 255), rgb(255, 0, 191), rgb(255, 0, 0), rgb(255, 132, 0));
+    background-size: 1000% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-text-animation 5s linear infinite;
+}
+
+@keyframes rainbow-text-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
