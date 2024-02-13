@@ -2,7 +2,10 @@
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://XavierM25.github.io/Portfolio",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -12,6 +15,7 @@
     "@heroicons/react": "^2.1.1",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.1.1",
     "next": "14.1.0",
     "react": "^18",
     "react-animated-numbers": "^0.18.0",
