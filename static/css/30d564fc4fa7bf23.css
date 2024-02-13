@@ -1,0 +1,1 @@
+.rainbow-text{background-image:linear-gradient(90deg,red,#ff8400,#f6ff00,#40ff00,#00d0ff,#2f00ff,#c0f,#ff00bf,red,#ff8400);background-size:1000% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbow-text-animation 5s linear infinite}@keyframes rainbow-text-animation{0%{background-position:0 50%}to{background-position:100% 50%}}
