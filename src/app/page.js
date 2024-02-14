@@ -21,7 +21,7 @@ export default function Home() {
       <ProjectsSection />
     </div>
     <div id="contact" className="container mt-24 mx-auto px-12 py-4">
-    <Donacion />
+      <EmailSection />
     </div>
     <Donacion />
   </div>
