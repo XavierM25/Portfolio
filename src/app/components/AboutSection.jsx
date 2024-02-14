@@ -79,7 +79,7 @@ const AboutSection = () => {
               active={tab === "skills"}
             >
               {""}
-              Conocimientos{""}
+              Dominio{""}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
@@ -94,7 +94,7 @@ const AboutSection = () => {
               active={tab === "certifications"}
             >
               {""}
-              Certificados{""}
+              Logros{""}
             </TabButton>
           </div>
           <div className="mt-8">

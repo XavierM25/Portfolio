@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Donacion = () => {
   const [monto, setMonto] = useState("");
@@ -26,9 +26,9 @@ const Donacion = () => {
 
   return (
     <section className=" py-8 px-4 md:px-8">
-      <h2 className="text-2xl font-bold text-center mb-4">Apoya nuestro proyecto</h2>
+      <h2 className="text-2xl font-bold text-center mb-4">Tu donación</h2>
       <p className="text-center mb-8">
-        Tu donación nos ayudará a seguir adelante con nuestra misión de...
+        Si deseas donarme para contribuir a este proyecto será bienvenido. ❤️
       </p>
 
       <form onSubmit={handleSubmit}>
@@ -36,7 +36,7 @@ const Donacion = () => {
           <div className="w-full md:w-1/2 mb-4 md:mb-0">
             <label
               htmlFor="monto"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-white"
             >
               Monto a donar
             </label>
@@ -50,49 +50,28 @@ const Donacion = () => {
             />
           </div>
 
-          <div className="flex flex-wrap mt-4 md:mt-0">
+          <div className="flex flex-co mt-4 md:mt-0">
             <button
               type="submit"
-              className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mr-2"
+              className="bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-2.5 px-6 rounded-lg w-full "
             >
-              S/. 10
+              PagoEfectivo
             </button>
             <button
               type="submit"
-              className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded mr-2"
+              className="bg-sky-500 hover:bg-sky-600 text-white font-medium py-2.5 px-6 rounded-lg w-full"
             >
-              S/. 25
+              PayPal
             </button>
             <button
               type="submit"
-              className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+              className="bg-red-500 hover:bg-red-600 text-white font-medium py-2.5 px-6 rounded-lg w-full"
             >
-              Otro monto
+              IziPay
             </button>
           </div>
         </div>
       </form>
-
-      <p className="text-center mt-4">
-        También puedes donar por PayPal o transferencia bancaria.
-      </p>
-
-      <div className="flex justify-center mt-4">
-        <a href="#">
-          <img
-            src="/images/paypal-logo.png"
-            alt="Logo de PayPal"
-            className="w-20 h-auto"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="/images/banco-logo.png"
-            alt="Logo del banco"
-            className="w-20 h-auto ml-4"
-          />
-        </a>
-      </div>
     </section>
   );
 };
