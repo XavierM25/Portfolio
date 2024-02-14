@@ -5,6 +5,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
+import Donacion from "./components/Donacion";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <ProjectsSection />
     </div>
     <div id="contact" className="container mt-24 mx-auto px-12 py-4">
-      <EmailSection />
+    <Donacion />
     </div>
+    <Donacion />
   </div>
   <Footer />
     </main>

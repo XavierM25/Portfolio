@@ -48,3 +48,69 @@ body {
     text-wrap: balance;
   }
 }
+
+.donaciones-container {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
+}
+
+.donaciones-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.donaciones-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.botones-donacion {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.boton {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.boton:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.amarillo {
+  background-color: #f9ca24;
+  color: #333;
+}
+
+.celeste {
+  background-color: #2497f9;
+  color: #fff;
+}
+
+.rojo {
+  background-color: #f92424;
+  color: #fff;
+}
+
+.verde {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.input-monto {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 50%;
+  margin: 1rem auto;
+}
