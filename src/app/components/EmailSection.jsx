@@ -56,9 +56,9 @@ const EmailSection = () => {
 
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-200 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-200 to-transparent rounded-full h-80 w-80 -z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
 
-      <div className="z-20">
+      <div>
         <h5 className="text-3xl font-bold text-[#121212] my-2">
           Vamos a conectarnos
         </h5>
@@ -110,7 +110,7 @@ const EmailSection = () => {
               type="text"
               id="user_name"
               required
-              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5 z-10"
               placeholder="¡Hola!"
             />
           </div>
@@ -124,7 +124,7 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5 z-10"
               placeholder="Vamos a hablar sobre..."
             />
             {messageError && (
@@ -133,7 +133,7 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-200 hover:bg-green-300 text-[#121212] font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-green-200 hover:bg-green-300 text-[#121212] font-medium py-2.5 px-5 rounded-lg w-full z-10"
           >
             Enviar mensaje
           </button>
