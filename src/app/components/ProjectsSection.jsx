@@ -28,7 +28,7 @@ const ProjectsSection = () => {
 
   return (
     <>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-[#121212] mt-4 mb-8 md:mb-12">
         Mis Proyectos
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-5 py-10">
