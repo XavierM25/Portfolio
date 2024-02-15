@@ -25,8 +25,8 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
           >
-            <h1 className="text-[#121212] mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-              <span className="rainbow-text font-semibold">Hola, soy{" "}</span>
+            <h1 className="text-[#121212] mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-black">
+              <span className="rainbow-text">Hola, soy{" "}</span>
               <br></br>
               <TypeAnimation
                 sequence={[
@@ -49,8 +49,8 @@ const HeroSection = () => {
             </p>
             <div>
                 {/*<button id="about" className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 via-primary-500 to-cyan-500 hover:bg-slate-200 text-white">Contáctame</button>*/}
-                <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-500 via-green-500 to-cyan-500 hover:bg-slate-800 text-[#121212] mt-3" onClick={handleDownloadCV}>
-                 <span className="block bg-[#F5E9DD] hover:bg-slate-800 rounded-full px-5 py-2">Descargar CV</span>
+                <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-[#ab5923] hover:bg-[#ab5923] text-[#ab5923] mt-3" onClick={handleDownloadCV}>
+                 <span className="block bg-[#fdf9f1] hover:bg-[#f4ddb4] rounded-full px-5 py-2">Descargar CV</span>
                 </button>
             </div>
         </motion.div>

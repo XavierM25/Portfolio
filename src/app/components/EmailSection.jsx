@@ -56,12 +56,13 @@ const EmailSection = () => {
 
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
-        <h5 className="text-3xl font-bold text-white my-2">
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-green-200 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+
+      <div className="z-20">
+        <h5 className="text-3xl font-bold text-[#121212] my-2">
           Vamos a conectarnos
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md text-xl">
+        <p className="text-black mb-4 max-w-md text-xl">
           {" "}
           ¿Estás interesado en contactarte conmigo? Puedes enviarme un mensaje
           rellenando el formulario o, contactarme mediante mis redes sociales.
@@ -84,7 +85,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="user_email"
-              className="text-white block mb-2 text-sm font-medium"
+              className="text-[#121212] block mb-2 text-sm font-medium"
             >
               Tu correo
             </label>
@@ -93,14 +94,14 @@ const EmailSection = () => {
               type="email"
               id="user_email"
               required
-              className="bg-[#18191E] border border-[#33353F] placeholder:-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5"
               placeholder="email@google.com"
             />
           </div>
           <div className="mb-6">
             <label
               htmlFor="user_name"
-              className="text-white block text-sm mb-2 font-medium"
+              className="text-[#121212] block text-sm mb-2 font-medium"
             >
               Asunto
             </label>
@@ -109,21 +110,21 @@ const EmailSection = () => {
               type="text"
               id="user_name"
               required
-              className="bg-[#18191E] border border-[#33353F] placeholder:-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5"
               placeholder="¡Hola!"
             />
           </div>
           <div className="mb-6">
             <label
               htmlFor="message"
-              className="text-white block mb-2 text-sm font-medium"
+              className="text-[#121212] block mb-2 text-sm font-medium"
             >
               Mensaje
             </label>
             <textarea
               name="message"
               id="message"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-[#faf0da] border border-[#121212] placeholder:-[#121212] text-[#121212] text-sm rounded-lg block w-full p-2.5"
               placeholder="Vamos a hablar sobre..."
             />
             {messageError && (
@@ -132,7 +133,7 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-500 hover:bg-green-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-green-200 hover:bg-green-300 text-[#d372dc] font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Enviar mensaje
           </button>
