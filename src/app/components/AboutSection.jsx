@@ -49,16 +49,16 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section className="text-[#121212]">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/image.png"
-          width={500}
-          height={500}
+          width={550}
+          height={550}
           alt="Logo de la página"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4 ">Sobre mí</h2>
+          <h2 className="text-4xl font-bold text-[#121212] mb-4 ">Sobre mí</h2>
           <p className="text-base md:text-lg">
             Me llamo David, tengo 19 años y soy de Lima, Perú. Actualmente soy
             estudiante de Ingeniería de Sistemas. Me apasiona enfocarme en la
@@ -72,7 +72,7 @@ const AboutSection = () => {
             (CONCYTEC) del estado peruano creando la aplicación móvil llamada
             FoodV que consiste en un E-Commerce.
           </p>
-          <br />
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}

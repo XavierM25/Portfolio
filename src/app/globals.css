@@ -41,6 +41,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Poppins', sans-serif;
 }
 
 @layer utilities {
@@ -49,68 +50,56 @@ body {
   }
 }
 
-.donaciones-container {
-  background-color: #f7f7f7;
-  padding: 2rem;
-  text-align: center;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: 900; /* Black */
 }
 
-.donaciones-container h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: bold; /* Bold */
 }
 
-.donaciones-container p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* Extra Bold */
 }
 
-.botones-donacion {
-  display: flex;
-  justify-content: center;
-  margin: 1rem auto;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200; /* Extra Light */
 }
 
-.boton {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300; /* Light */
 }
 
-.boton:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
 }
 
-.amarillo {
-  background-color: #f9ca24;
-  color: #333;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal; /* Regular */
 }
 
-.celeste {
-  background-color: #2497f9;
-  color: #fff;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* Semi Bold */
 }
 
-.rojo {
-  background-color: #f92424;
-  color: #fff;
-}
-
-.verde {
-  background-color: #27ae60;
-  color: #fff;
-}
-
-.input-monto {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-  width: 50%;
-  margin: 1rem auto;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100; /* Thin */
 }
