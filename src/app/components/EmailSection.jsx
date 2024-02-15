@@ -62,7 +62,7 @@ const EmailSection = () => {
         <h5 className="text-3xl font-bold text-[#121212] my-2">
           Vamos a conectarnos
         </h5>
-        <p className="text-black mb-4 max-w-md text-xl">
+        <p className="text-black mb-4 max-w-md text-base">
           {" "}
           ¿Estás interesado en contactarte conmigo? Puedes enviarme un mensaje
           rellenando el formulario o, contactarme mediante mis redes sociales.
@@ -133,7 +133,7 @@ const EmailSection = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-200 hover:bg-green-300 text-[#d372dc] font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-green-200 hover:bg-green-300 text-[#121212] font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Enviar mensaje
           </button>

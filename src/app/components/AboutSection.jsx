@@ -1,5 +1,5 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, { useTransition, useState, useEffect } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
@@ -40,6 +40,7 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
+  const [activeTabContent, setActiveTabContent] = useState(TAB_DATA.find(t => t.id === tab).content);
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -47,6 +48,10 @@ const AboutSection = () => {
       setTab(id);
     });
   };
+
+  useEffect(() => {
+    setActiveTabContent(TAB_DATA.find(t => t.id === tab).content);
+  }, [tab]);
 
   return (
     <section className="text-[#121212]">
@@ -56,6 +61,7 @@ const AboutSection = () => {
           width={550}
           height={550}
           alt="Logo de la página"
+          priority={true}
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-[#121212] mb-4 ">Sobre mí</h2>

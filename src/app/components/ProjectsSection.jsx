@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 
@@ -18,13 +18,13 @@ const projectsData = [
 const ProjectsSection = () => {
   const [tag, setTag] = useState("Todo");
 
-  const handleTagChange = (newTag) => {
+  const handleTagChange = useCallback((newTag) => {
     setTag(newTag);
-  };
+  }, []);
 
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
+  const filteredProjects = useMemo(() => {
+    return projectsData.filter((project) => project.tag.includes(tag));
+  }, [tag]);
 
   return (
     <>
